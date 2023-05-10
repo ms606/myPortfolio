@@ -1,0 +1,10 @@
+.img-frame {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-frame img{
+    height: 100;
+}
