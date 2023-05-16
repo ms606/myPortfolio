@@ -3,19 +3,30 @@
     --gray:  #99A3A4;
 }
 
+.container {
+    margin: 50px auto;
+    padding: 5px;
+    max-width: 650px;
+}
+@media (max-width: 600px){
+    .container {
+        padding: 20px;
+    }
+}
+
 body {
     font-family: "Roboto Mono", monospace;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: var(--black);
     font-weight: 400;
     margin: 0;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
     color: var(--gray);
     letter-spacing: 0.1px;
@@ -34,16 +45,25 @@ h2 {
 }
 .img-frame {
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 60%; 
+    margin: 0 0 10px 0;
+    overflow: hidden;
+
 }
 
 .img-frame img{
     height: 100%;
-    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} 
+
+.links {
+    margin: 25px;
+}
+.links a:not(:last-child){
+ padding: 0 12px 0 0;   
 }
