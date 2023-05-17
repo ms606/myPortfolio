@@ -3,6 +3,17 @@
     --gray:  #99A3A4;
 }
 
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+body, button {
+
+}
+
 .container {
     margin: 50px auto;
     padding: 5px;
@@ -12,10 +23,6 @@
     .container {
         padding: 20px;
     }
-}
-
-body {
-    font-family: "Roboto Mono", monospace;
 }
 
 h1 {
@@ -50,7 +57,6 @@ h2 {
     border-radius: 60%; 
     margin: 0 0 10px 0;
     overflow: hidden;
-
 }
 
 .img-frame img{
@@ -63,7 +69,24 @@ h2 {
 
 .links {
     margin: 25px;
+    display: flex;
+    justify-content: center;
+    
 }
 .links a:not(:last-child){
- padding: 0 12px 0 0;   
+ padding: 0 60px 0 0;   
+}
+
+.bio {
+    display: none;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.bio.show {
+    display: block;
+}
+
+button {
+    border-radius: 50%;
 }
