@@ -1,6 +1,8 @@
 :root {
     --black: #1B1212;
     --gray:  #99A3A4;
+    --white: #ffffff;
+    --pink: #f34235;
 }
 
 html, body {
@@ -11,7 +13,18 @@ html, body {
 }
 
 body, button {
+    background-color: var(--white);
+}
 
+button {
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--pink); 
+    color: var(--pink);
+    box-sizing: border-box;
 }
 
 .container {
@@ -50,6 +63,7 @@ h2 {
 .header-frame {
     max-width: 350px;
 }
+
 .img-frame {
     position: relative;
     width: 250px;
@@ -73,8 +87,13 @@ h2 {
     justify-content: center;
     
 }
+
 .links a:not(:last-child){
  padding: 0 60px 0 0;   
+}
+
+.toggler {
+    padding: 15px;;
 }
 
 .bio {
@@ -85,8 +104,4 @@ h2 {
 
 .bio.show {
     display: block;
-}
-
-button {
-    border-radius: 50%;
 }
