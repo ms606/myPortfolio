@@ -15,10 +15,25 @@ function setBioEventListener() {
 }
 
 function bioToggle(e){
-    let element = document.getElementsByClassName("bio short");
-    console.log(element);
-    element.classList.add('show')
+    //console.log(e.target);
+    let bioType = e.target;
+   // let element = document.getElementById("bio-short");
+   off();
+    let bioTypeElement = document.getElementsByClassName(bioType.id)[0];
+    //console.log(bioTypeElement,'1');
+    
+    //console.log(document.getElementsByClassName(bioType.id));    
+   
+    if (bioTypeElement !== undefined) bioTypeElement.classList.add("show");
 }
+
+function off(){
+    Array.from(document.getElementsByClassName('bio')).forEach((e) => {
+        e.classList.remove('show');
+    })
+}
+
+
 
 setBioEventListener();
 
